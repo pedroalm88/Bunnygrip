@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GripKids - Grips Ergonômicos para Lápis Infantis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <h1 class="logo__text">GripKids</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#beneficios" class="nav__link">Benefícios</a>
+                    <a href="#como-funciona" class="nav__link">Como Funciona</a>
+                    <a href="#produtos" class="nav__link">Produtos</a>
+                    <a href="#encomenda" class="nav__link">Encomendar</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">Ajude seu filho a escrever melhor com nossos grips ergonômicos</h1>
+                    <p class="hero__subtitle">Desenvolvido especialmente para crianças, nosso grip triangular promove a preensão correta e melhora a caligrafia de forma natural e divertida.</p>
+                    <div class="hero__benefits">
+                        <div class="benefit-item">✓ Melhora a caligrafia</div>
+                        <div class="benefit-item">✓ Reduz o cansaço</div>
+                        <div class="benefit-item">✓ 100% seguro</div>
+                    </div>
+                    <a href="#encomenda" class="btn btn--primary btn--lg hero__cta">Encomendar Agora</a>
+                </div>
+                <div class="hero__image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1749375939/pplx_project_search_images/a6d65d4011f6e87c32b7a6290b1467b0644655b2.jpg" alt="Grips Ergonômicos Coloridos" class="hero__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Por que escolher nosso grip?</h2>
+            <div class="benefits__grid" id="benefits-grid">
+                <!-- Benefits will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section id="como-funciona" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Como funciona</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step__number">1</div>
+                    <div class="step__content">
+                        <h3>Encaixe fácil</h3>
+                        <p>Coloque o grip no lápis ou caneta - encaixa perfeitamente sem ferramentas</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step__number">2</div>
+                    <div class="step__content">
+                        <h3>Posição correta</h3>
+                        <p>O design triangular guia naturalmente os dedos para a preensão tripóide</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step__number">3</div>
+                    <div class="step__content">
+                        <h3>Escrita melhorada</h3>
+                        <p>Menos cansaço, mais controle e caligrafia visivelmente melhor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <h2 class="section-title">Escolha sua cor favorita</h2>
+            <div class="product-showcase">
+                <div class="product-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1749375939/pplx_project_search_images/b7bec015c3f608b89cc964e554d25771d8001196.jpg" alt="Grips em várias cores" class="product__img">
+                </div>
+                <div class="color-options">
+                    <h3>Cores disponíveis:</h3>
+                    <div class="colors" id="color-options">
+                        <!-- Colors will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que dizem nossos clientes</h2>
+            <div class="testimonials__grid" id="testimonials-grid">
+                <!-- Testimonials will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Especificações Section -->
+    <section class="specifications">
+        <div class="container">
+            <h2 class="section-title">Especificações Técnicas</h2>
+            <div class="spec-grid" id="specifications-grid">
+                <!-- Specifications will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Encomenda -->
+    <section id="encomenda" class="order-form">
+        <div class="container">
+            <div class="order-card">
+                <h2 class="order-title">Faça sua encomenda</h2>
+                <form id="order-form" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome completo *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefone *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="color" class="form-label">Cor *</label>
+                            <select id="color" name="color" class="form-control" required>
+                                <option value="">Selecione uma cor</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quantity" class="form-label">Quantidade *</label>
+                            <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="50" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Total</label>
+                            <div class="price-display" id="total-price">€12,99</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="form-label">Morada completa *</label>
+                        <textarea id="address" name="address" class="form-control" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes" class="form-label">Observações</label>
+                        <textarea id="notes" name="notes" class="form-control" rows="2" placeholder="Alguma observação especial?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width btn--lg">Enviar Encomenda</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-list" id="faq-list">
+                <!-- FAQ items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>GripKids</h3>
+                    <p>Ajudando crianças a escrever melhor, um grip de cada vez.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Contato</h4>
+                    <p>Email: info@gripkids.pt</p>
+                    <p>Telefone: +351 123 456 789</p>
+                </div>
+                <div class="footer__social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-link">Facebook</a>
+                        <a href="#" target="_blank" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 GripKids. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal hidden">
+        <div class="modal__content">
+            <h3>Encomenda enviada com sucesso!</h3>
+            <p>Obrigado pela sua encomenda. Entraremos em contacto em breve para confirmar os detalhes.</p>
+            <button id="close-modal" class="btn btn--primary">Fechar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
